@@ -22,12 +22,12 @@ const ContactForm = () => {
   return (
     <div className='formholder Snapper' netlify>
       <h2>Ponete en contacto con nosotros!</h2>
-      <form className='form' name='contact-form' netlify>
+      <form className='form' name='contact-form' method="POST" netlify>
         <div>
           <label htmlFor="name">Name:</label>
           <input
             type="text"
-            id="name"
+            name="name"
             
             required
           />
@@ -36,7 +36,7 @@ const ContactForm = () => {
           <label htmlFor="email">Email:</label>
           <input
             type="email"
-            id="email"
+            name="email"
             
             required
           />
@@ -44,7 +44,7 @@ const ContactForm = () => {
         <div>
           <label htmlFor="message">Message:</label>
           <textarea
-            id="message"
+            name="message"
             
             required
           />
