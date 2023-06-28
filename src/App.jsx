@@ -23,6 +23,7 @@ const ContactForm = () => {
     <div className='formholder Snapper' netlify>
       <h2>Ponete en contacto con nosotros!</h2>
       <form className='form' name='contact-form' method="POST" netlify>
+      <input type="hidden" name="form-name" value="my-form" />
         <div>
           <label htmlFor="name">Name:</label>
           <input
