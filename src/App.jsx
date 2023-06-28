@@ -28,7 +28,7 @@ const ContactForm = () => {
           <input
             type="text"
             id="name"
-            value={name}
+            
             required
           />
         </div>
@@ -37,7 +37,7 @@ const ContactForm = () => {
           <input
             type="email"
             id="email"
-            value={email}
+            
             required
           />
         </div>
@@ -45,7 +45,7 @@ const ContactForm = () => {
           <label htmlFor="message">Message:</label>
           <textarea
             id="message"
-            value={message}
+            
             required
           />
         </div>
