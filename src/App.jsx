@@ -22,14 +22,13 @@ const ContactForm = () => {
   return (
     <div className='formholder Snapper' netlify>
       <h2>Ponete en contacto con nosotros!</h2>
-      <form className='form' onSubmit={handleSubmit}>
+      <form className='form' netlify>
         <div>
           <label htmlFor="name">Name:</label>
           <input
             type="text"
             id="name"
             value={name}
-            onChange={handleNameChange}
             required
           />
         </div>
@@ -39,7 +38,6 @@ const ContactForm = () => {
             type="email"
             id="email"
             value={email}
-            onChange={handleEmailChange}
             required
           />
         </div>
@@ -48,7 +46,6 @@ const ContactForm = () => {
           <textarea
             id="message"
             value={message}
-            onChange={handleMessageChange}
             required
           />
         </div>
