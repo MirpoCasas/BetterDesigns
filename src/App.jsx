@@ -18,34 +18,9 @@ import './App.scss'
 
 
 const ContactForm = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-
-  const handleNameChange = (e) => {
-    setName(e.target.value);
-  };
-
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-  };
-
-  const handleMessageChange = (e) => {
-    setMessage(e.target.value);
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Perform form submission logic here, such as sending the form data to a server
-
-    // Reset form fields
-    setName('');
-    setEmail('');
-    setMessage('');
-  };
 
   return (
-    <div className='formholder Snapper'>
+    <div className='formholder Snapper' netlify>
       <h2>Ponete en contacto con nosotros!</h2>
       <form className='form' onSubmit={handleSubmit}>
         <div>
