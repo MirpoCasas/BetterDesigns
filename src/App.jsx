@@ -103,7 +103,7 @@ function App() {
       <div className="Snapper"></div>
       <div className="videoHolder">
         <video src={videoone} frameBorder="0" className='backgroundvideo' disablePictureInPicture autoPlay loop muted></video>
-        <h1>Soluciones personalisadas para tu negocio</h1>
+        <h1>Soluciones personalizadas para tu negocio</h1>
       </div>
       <img src={arrow} alt="arrow" className='Intro_arrow' />
       <div ref={ref} className='Description '>
